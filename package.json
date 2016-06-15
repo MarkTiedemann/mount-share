@@ -1,0 +1,27 @@
+{
+  "name": "mount-share",
+  "version": "0.0.1",
+  "description": "Mount and dismount network shares on Windows.",
+  "main": "index.js",
+  "keywords": [
+    "mount",
+    "dismount",
+    "share",
+    "windows",
+    "smb",
+    "samba"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": "Mark Tiedemann <www.marktiedemann@gmail.com>",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkTiedemann/mount-share.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarkTiedemann/mount-share/issues"
+  },
+  "homepage": "https://github.com/MarkTiedemann/mount-share"
+}

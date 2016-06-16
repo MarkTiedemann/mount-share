@@ -12,47 +12,43 @@ npm install mount-share
 ## Quickstart
 
 ```js
-const share = require('mount-share')
-
-const options = {
+const share = require('mount-share')({
     server: 'multimedia-homeserver',
     share: 'music-collection',
     drive: 'M'
     username: 'uncreative-username',
     password: 'super-secret-password'
-}
+})
 
-share.mount(options)
+share.mount()
     .then(() => console.log('mounted!'))
 
 // some time later
-share.dismount(options)
+share.dismount()
     .then(() => console.log('dismounted!'))
 
 ```
 
 ## API
 
-```js
-const share = require('mount-share')
-```
-
-### `share.mount(options)`
+### `require('mount-share')(options)`
 
 - **options** `<Object>`:
-    - **server** `<String>`
-    - **share** `<String>`
+    - **server** `<String>`: *required*
+    - **share** `<String>`: *required*
     - **drive** `<String>`: *default*: `X`
     - **username** `<String>`: *optional*
     - **password** `<String>`: *optional*
+- **returns** the share `<Object>`
+
+### `share.mount()`
+
 - **returns** a `<Promise>` which:
     - **resolves** if the share was mounted
     - **rejects** if an error occured
 
-### `share.dismount(options)`
+### `share.dismount()`
 
-- **options** `<Object>`:
-    - **drive** `<String>`: *default*: `X`
 - **returns** a `<Promise>` which:
     - **resolves** if the share was dismounted
     - **rejects** if an error occured

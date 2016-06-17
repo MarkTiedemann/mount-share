@@ -1,6 +1,6 @@
 {
   "name": "mount-share",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mount and dismount network shares on Windows.",
   "main": "index.js",
   "keywords": [
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/MarkTiedemann/mount-share/issues"
   },
-  "homepage": "https://github.com/MarkTiedemann/mount-share"
+  "homepage": "https://github.com/MarkTiedemann/mount-share",
+  "dependencies": {
+    "throw-if-missing": "^1.0.1"
+  }
 }
